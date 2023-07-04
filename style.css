@@ -28,6 +28,10 @@ img {
     height: auto;
   }  
 
+  input[type="number"] {
+    width: 30px; /* Puedes ajustar el valor según tus necesidades */
+  }
+
 @media (max-width: 768px) {
   .input-group {
     display: flex;
