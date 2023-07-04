@@ -36,5 +36,8 @@ img {
     text-align: center;
     margin-bottom: 10px;
   }
-}
 
+  input[type="number"] {
+    width: 100px; /* Puedes ajustar el valor según tus necesidades */
+  }
+}
