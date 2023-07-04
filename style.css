@@ -21,10 +21,6 @@ body {
     margin-bottom: 30px;
 }
 
-.input-group label {
-    margin-right: auto;
-}
-
 .input-group input[type="number"] {
     width: 50px;
 }
