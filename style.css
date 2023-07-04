@@ -1,0 +1,29 @@
+*{
+    background-color: #b0e0e6;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+.container {
+    text-align: center;
+}
+  
+.input-group {
+    margin-bottom: 30px;
+}
+
+.button {
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
+img{
+    width: 250px;
+    height: 200px;
+}
