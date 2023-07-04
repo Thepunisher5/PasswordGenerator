@@ -36,9 +36,11 @@ img {
     text-align: center;
     margin-bottom: 10px;
   }
-    
- .input-number {
-    width: 30px;
+
+  .input-group label,
+  .input-group input {
+    display: inline-block;
+    margin-right: 10px; /* Ajusta el margen según tus preferencias */
   }
-    
 }
+
