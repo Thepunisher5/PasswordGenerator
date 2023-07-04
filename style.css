@@ -29,7 +29,7 @@ img {
   }  
 
   input[type="number"] {
-    width: 30px; /* Puedes ajustar el valor según tus necesidades */
+    width: 50px; /* Puedes ajustar el valor según tus necesidades */
   }
 
 @media (max-width: 768px) {
@@ -39,9 +39,5 @@ img {
     align-items: center;
     text-align: center;
     margin-bottom: 10px;
-  }
-
-  input[type="number"] {
-    width: 30px; /* Puedes ajustar el valor según tus necesidades */
   }
 }
