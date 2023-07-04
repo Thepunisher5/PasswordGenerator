@@ -5,21 +5,21 @@ var symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
 var password_list = [];
 
 function generarLetters(nr_letters) {
-    for (var i = 0; i<nr_letters; i++) {
+    for (var i = 0; i < nr_letters; i++) {
         var indiceAleatorio = Math.floor(Math.random() * letters.length);
         password_list.push(letters[indiceAleatorio]);
     }
 }
 
 function generarNumbers(nr_numbers) {
-    for (var i = 0; i<nr_numbers; i++) {
+    for (var i = 0; i < nr_numbers; i++) {
         var indiceAleatorio = Math.floor(Math.random() * numbers.length);
         password_list.push(numbers[indiceAleatorio]);
     }
 }
 
 function generarSymbols(nr_symbols) {
-    for (var i = 0; i<nr_symbols; i++) {
+    for (var i = 0; i < nr_symbols; i++) {
         var indiceAleatorio = Math.floor(Math.random() * symbols.length);
         password_list.push(symbols[indiceAleatorio]);
     }
@@ -45,4 +45,23 @@ function generarYMostrarPassword() {
 
     var resultadoElement = document.getElementById("resultado");
     resultadoElement.textContent = "Contraseña: " + passwordAleatorio;
+
+    var copyButton = document.createElement('button');
+    copyButton.innerHTML = '<i class="fas fa-copy"></i>';
+    copyButton.classList.add('copy-button');
+    copyButton.addEventListener('click', function() {
+        copiarAlPortapapeles(passwordAleatorio);
+        alert('¡Contraseña copiada al portapapeles!');
+    });
+
+    resultadoElement.appendChild(copyButton);
+}
+
+function copiarAlPortapapeles(texto) {
+    var tempInput = document.createElement('input');
+    tempInput.value = texto;
+    document.body.appendChild(tempInput);
+    tempInput.select();
+    document.execCommand('copy');
+    document.body.removeChild(tempInput);
 }
