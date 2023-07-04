@@ -22,7 +22,7 @@ body {
 }
 
 .input-group label {
-    margin-right: 10px;
+    margin-right: auto;
 }
 
 .input-group input[type="number"] {
