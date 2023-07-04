@@ -36,4 +36,9 @@ img {
     text-align: center;
     margin-bottom: 10px;
   }
+    
+  input[type="number"] {
+    width: 30px;
+  }
+    
 }
