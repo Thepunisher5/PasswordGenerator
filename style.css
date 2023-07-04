@@ -23,7 +23,12 @@ body {
     padding: 10px 20px;
 }
 
-img{
-    width: 250px;
-    height: 200px;
-}
+img {
+    max-width: 100%;
+    height: auto;
+  }  
+
+@media (max-width: 768px) {
+    /* Estilos específicos para dispositivos móviles */
+  }
+  
